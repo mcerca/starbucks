@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Oswald", sans-serif;
+  font-style: 600;
+}
+
+.bar {
+  height: 22px;
+  width: 200px;
+  background-color: #117050;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.button-link {
+  display: inline-block;
+  color: #444;
+  margin-top: 10px;
+  border: 2px solid #444;
+  padding: 20px 50px;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.button-link:hover {
+  color: #fff;
+  background-color: #444;
+}
+
+.line {
+  height: 10px;
+  background-color: #117050;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.header img {
+  height: 64px;
+  width: 64px;
+}
+
+.header form, .header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header form input {
+  font-size: 16px;
+  outline: 0;
+  width: 100%;
+  max-width: 270px;
+  padding: 8px 15px;
+  border: 1px solid #999;
+}
+
+.header form button {
+  border: 0;
+  cursor: pointer;
+  margin-left: -30px;
+  background-color: transparent;
+}
+
+.header form button img {
+  height: 14px;
+  width: 14px;
+}
+
+.header-actions-menu {
+  margin-left: 30px;
+}
+
+.header-actions-menu img {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+
+.banner {
+  padding: 120px 0;
+  background-image: url("../bg.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.banner h1 {
+  font-size: 90px;
+  line-height: 90px;
+  margin-bottom: 30px;
+}
+
+.banner-images {
+  margin-top: 40px;
+}
+
+.banner-images img {
+  height: 148px;
+  width: 148px;
+  border: 7px solid #117050;
+  border-radius: 50%;
+}
+
+.banner-images img + img {
+  margin-left: 30px;
+}
+
+/* ########  */
+
+.area1, .area2, .area3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.area1-content,
+.area2-content { padding: 100px; }
+
+.area1-content h2,
+.area2-content h2,
+.area3-content h2,
+.area4-content h2 {
+  font-size: 42px;
+  line-height: 45px;
+  margin: 20px 0 10px;
+}
+
+.area1-content p,
+.area2-content p,
+.area3-content p,
+.area4-content p   {
+  color: #444;
+  margin-bottom: 50px;
+}
+
+.area1-img1 {
+  height: 400px;
+  background-image: url("../f2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.area1-img2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  background-image: url("../f1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.area2-img1 {
+  height: 500px;
+  background-image: url("../f4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.area2-img2 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-image: url("../f3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.area3-content {
+  padding: 200px 100px;
+  background-image: url("../bg2.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.area3-img1 {
+  background-image: url("../f5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.area4 {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+}
+
+.area4-content {
+  padding: 200px 100px;
+  background-color: #e8e9ef;
+}
+
+.area4-img1 {
+  background-image: url("../bg3.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.area5 {
+  height: 800px;
+  background-image: url("../bg4.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  background-color: gray;
+}
+
+footer p + p {
+  margin-top: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .area1, .area2, .area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
