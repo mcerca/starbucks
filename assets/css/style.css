@@ -120,8 +120,8 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 50%;
 }
 
-.banner-images img + img {
-  margin-left: 30px;
+.banner-images img {
+  margin-right: 10px;
 }
 
 /* ########  */
@@ -228,26 +228,50 @@ footer p + p {
   margin-top: 20px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* medias querys */
+@media (min-width: 769px) and (max-width: 1140px) {
   .container {
     padding: 0 20px;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .area1, .area2, .area3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 426px) and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
   }
+
+  .area1, .area3 {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .area2 {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .banner h1 {  
+    font-size: 50px;
+    line-height: 50px;
+  }
+.banner-images img {
+  height: 60px;
+    width: 60px;
+    border: 2px solid #117050;
+  }
+
+  .area1,
+  .area2,
+  .area3, .area4 { grid-template-columns: 1fr;}
+
+  .area1-content,
+  .area2-content,
+  .area3-content,.area4-content {
+    padding: 40px;
+  }
+
 }
